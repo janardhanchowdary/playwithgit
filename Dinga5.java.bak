@@ -1,0 +1,53 @@
+package kedi;
+class Jungle
+{
+	void disp( )
+	{
+	 System.out.println("its forest");
+	 }
+}
+class cat extends Jungle
+{
+	void disp( )
+	{
+	 System.out.println("its meow");
+	 
+	}
+}
+class dog extends Jungle
+{
+	void disp( )
+	{
+	 System.out.println("its bow");
+	 
+	}
+}
+class snake extends Jungle
+{
+	void disp( )
+	{
+	 System.out.println("its buss buss ");
+	 
+	}
+}
+class Matrimony
+{
+	static void profile(  Jungle j1)
+	{	
+		j1.disp( );
+	 
+	}
+}
+
+public class Dinga5 {
+	public static void main(String [] args)
+	{
+		cat c1=new cat ( );
+		dog d1=new dog ( );
+        snake s1=new snake( );
+        Matrimony.profile(c1);
+        Matrimony.profile(d1);
+        Matrimony.profile(s1);
+	}
+
+}
